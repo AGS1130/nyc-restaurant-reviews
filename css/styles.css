@@ -100,6 +100,10 @@ nav h1 a {
   text-transform: uppercase;
 }
 
+nav:not(:first-child) {
+  background-color: transparent;
+}
+
 #breadcrumb {
   padding: 10px 40px 16px;
   list-style: none;

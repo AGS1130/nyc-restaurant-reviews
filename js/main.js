@@ -7,7 +7,7 @@ var markers = []
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
   initMap(); // added
   fetchNeighborhoods();
   fetchCuisines();
@@ -152,7 +152,7 @@ createRestaurantHTML = (restaurant) => {
   image.alt = restaurant.name + ' Restaurant';
   li.append(image);
 
-  const name = document.createElement('h1');
+  const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
   li.append(name);
 
